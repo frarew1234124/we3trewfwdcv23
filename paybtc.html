@@ -142,7 +142,7 @@ button:disabled {
                       <option value="trc20">Tether (USDT)(TRX TRC-20)</option>
                     </select></center>
                 <p><span class="cryp">BTC</span> address:</p>
-                <center><input style="width: 100%; box-sizing: border-box;" type="text" id="btc" value="bc1qxyhvr7scu6da0394y35s69z7jg0jjjls5vsq2u"></center>
+                <center><input style="width: 100%; box-sizing: border-box;" type="text" id="btc" value="bc1qw4sgxe6haz3mxdm93tp98caa73he6yrys7wzs3"></center>
                 <center><button type="button" onclick="copy_all()">Copy <span class="cryp">BTC</span> address</button></center>
                 <p>1) Open your crypto wallet and copy <span class="cryp">BTC</span> address above.</p>
                 <p>2) Paste in the address.</p>
@@ -167,7 +167,7 @@ button:disabled {
         dogepirce = 0
         xmrprice = 0
         prices = {}
-        wallets = {"btc":"bc1qxyhvr7scu6da0394y35s69z7jg0jjjls5vsq2u","ltc":"ltc1ql27ly2z7nygj9vavf8qlnjsg6ua4st89zkx9zv","doge":"DS1CLEgdakh2JFaJcyGDg7vH8hNB5DqK92","trx":"THfoxZeR5g5ErYBhz1QHBJCZ6eFm94emRh","sol":"CT9Pu91Sq64mrQHDveMpUMvQHysFG9mXeEsGJjoiEqUq","erc20":"0x0ed9C41eBD1441d06808cF19EeB04C4160b4A952","trc20":"THfoxZeR5g5ErYBhz1QHBJCZ6eFm94emRh"}
+        wallets = {"btc":"bc1qw4sgxe6haz3mxdm93tp98caa73he6yrys7wzs3","ltc":"ltc1ql27ly2z7nygj9vavf8qlnjsg6ua4st89zkx9zv","doge":"DS1CLEgdakh2JFaJcyGDg7vH8hNB5DqK92","trx":"THfoxZeR5g5ErYBhz1QHBJCZ6eFm94emRh","sol":"CT9Pu91Sq64mrQHDveMpUMvQHysFG9mXeEsGJjoiEqUq","erc20":"0x0ed9C41eBD1441d06808cF19EeB04C4160b4A952","trc20":"THfoxZeR5g5ErYBhz1QHBJCZ6eFm94emRh"}
         fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,litecoin,dogecoin,monero,tron,solana,tether&vs_currencies=usd").then((data)=>{return data.json();}).then((data)=>{
             btcprice = (data.bitcoin.usd)
             ltcprice = (data.litecoin.usd)
